@@ -11,9 +11,11 @@ function handleSubmit(event) {
   menuText.textContent = "";
 
   for (let i = 0; i < menu.length; i++) {
-    menuText.textContent = menuText.textContent + menu[i].name + " — $" + menu[i].price + "\n";
+    menuText.textContent =
+      menuText.textContent + menu[i].name + " — $" + menu[i].price + "\n";
   }
 }
 
 form.addEventListener("submit", handleSubmit);
+
 
